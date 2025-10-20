@@ -1,0 +1,38 @@
+nav {
+    background-color: #383e4c;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 20px;
+    padding: 20px;
+    overflow: hidden;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.Heading1 {
+    background-image: url(layout-01-assets/img11.jpg);
+    background-size: cover;
+    height: 500px;
+    background-repeat: no-repeat;
+}
+
+.Heading1 h1 {
+    color: white;
+    text-align: center;
+    padding-top: 175px;
+    text-shadow: 0px 1px 1px #000000;
+    font-size: 50px;
+}
+
+.Heading1 p {
+    color: white;
+    text-align: center;
+    font-size: 20px;
+}
