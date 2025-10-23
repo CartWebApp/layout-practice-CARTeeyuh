@@ -4,23 +4,28 @@ body {
 }
 
 
+
 /*Code responsible for the "Navigation Bar" portion of website*/
 nav {
     background-color: #383e4c;
 }
-
 nav ul {
     display: flex;
+    gap: 30px;
     justify-content: center;
     list-style-type: none;
     margin: 20px;
     padding: 20px;
     overflow: hidden;
+    
 }
 
 nav ul li a {
+    display: flex;
     text-decoration: none;
     color: white;
+    border: lightgrey 1px solid;
+    padding: 8px;
 }
 
 
@@ -52,7 +57,7 @@ nav ul li a {
     flex-wrap: wrap;
     max-width: 200px;
     max-height: 1000px;
-    margin-left: 400px;
+    margin-left: 300px;
 }
 .Headlines {
     display: flex;
@@ -67,13 +72,7 @@ nav ul li a {
 .Headline-Green p, .Headline-Green h3, .Headline-Blue p, .Headline-Blue h3, .Headline-Red p, .Headline-Red h3, .column-left p, .column-left h3, .column-right p, .column-right h3{
     margin: 20px;
 }
-.Headline-Green {
-    background-color: lightgrey;
-}
-.Headline-Blue {
-    background-color: lightgrey;
-}
-.Headline-Red {
+.Headline-Green, .Headline-Blue, .Headline-Red {
     background-color: lightgrey;
 }
 .main-columns {
@@ -90,16 +89,77 @@ nav ul li a {
     margin-left: 250px;
 }
 
+a[class="TCRS-Link"] {
+    display: flex;
+    text-justify: center;
+    text-align: center;
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    color: rgb(88, 88, 88);
+    width: 100px;
+    height: 20px;
+    margin-left: 400px;
+    margin-bottom: 10px;
+}
+a[href="#"] {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+a[class="button-green"] {
+    display: flex;
+    text-justify: center;
+    text-align: center;
+    background-color: rgb(43, 125, 43);
+    color: white;
+    padding: 10px;
+    margin-left: 90px;
+    margin-bottom: 10px;
+    width: 100px;
+    border-radius: 5px;
+    height: 20px;
+    width: 150px;
+}
+a[class="button-red"] {
+    display: flex;
+    text-justify: center;
+    text-align: center;
+    background-color: rgb(125, 43, 43);
+    color: white;
+    padding: 10px;
+    margin-left: 120px;
+    margin-bottom: 10px;
+    width: 100px;
+
+    border-radius: 5px;
+    height: 20px;
+}
+a[class="button-blue"] {
+    display: flex;
+    text-justify: center;
+    text-align: center;
+    background-color: rgb(43, 75, 125);
+    color: white;
+    padding: 10px;
+    margin-left: 120px;
+    margin-bottom: 10px;
+    width: 100px;
+    border-radius: 5px;
+    height: 20px;
+}
+
 
 
 /*Code responsible for the "Our Services" portion of website*/
 .Heading2 {
     display: flex;
     padding: 100px;
+    margin-top: 90px;
     background-image: url(layout-01-assets/img13.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 200px;
+    height: 150px;
     flex-direction: column;
 }
 .Heading2 h2, .Heading2 p {
@@ -108,7 +168,7 @@ nav ul li a {
 .Heading2 h2 {
     color: white;
     text-shadow: 0px 1px 1px #000000;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     text-align: center;
     width: 500px;
 }
@@ -121,24 +181,210 @@ nav ul li a {
 
 
 
-
 /*Code responsible for the "columns" portion of website*/
+
+.columns {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.column1 + h3, .column2, .column3, .column4 {
+    text-align: center;
+}
 .column1, .column2, .column3, .column4 {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap; 
+    flex-wrap: wrap; 
     justify-self: center;
     background-color: lightgrey;
+    text-align: center;
     max-width: 260px;
     max-height: 500px;
     gap: 10px;
     margin: 10px;
-    padding: 20px 20px;
+}
+.Big-Column {
+    display: flex;
+    justify-self: center;
+    flex-direction: column;
+    max-height: 2000px;
+    max-width: 1100px;
+    margin: 30px;
+    background-color: lightgrey;
+}
+.Big-Column h3 {
+    text-align: center;
+}
+.Big-Column p {
+    padding-right: 20px;
+    padding-left: 20px;
+}
+a[class="C2-Link"] {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    color: rgb(139, 139, 139);
+    margin-left: 80px;
+    margin-bottom: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+    height: 20px;
+    width: 100px;
+}
+a[class="C4-Link"] {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    color: rgb(139, 139, 139);
+    margin-left: 80px;
+    margin-bottom: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+    height: 20px;
+    width: 100px;
+}
+.Big-Column {
+    display: flex;
+}
+a[class="OBC-Link"] {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    color: rgb(139, 139, 139);
+    margin-left: 80px;
+    margin-bottom: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+    height: 20px;
+    width: 100px;
 }
 
 
 
-.Big-Column {
+/*Code responsible for "Contact" portion of website*/
+.Heading3 {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url(layout-01-assets/img14.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 600px
+}
+.Heading3 h2 {
+    display: flex;
+    justify-content: center;
+    color: white;
+    padding-top: 50px;
+}
+.Contact-Disc {
+    display: flex;
+    justify-content: center;
+    color: black;
+    margin-left: 620px;
+    padding-top: 20px;
+    border-radius: 5px;
+    width: 800px;
+    background-color: rgba(255, 255, 255, 0.2)
+}
+.Contact-Name {
+    display: flex;
+    justify-content: flex-start;
+    background-color: rgba(255, 255, 255, 0.2);
+    width: 380px;
+    height: 30px;
+    margin-top: 20px;
+    margin-left: 620px;
+    padding-left: 10px;
+    padding-bottom: 20px;
+    border-radius: 5px;
+}
+.Contact-Email {
+    display: flex;
+    justify-content: flex-start;
+    background-color: rgba(255, 255, 255, 0.2);
+    width: 380px;
+    height: 30px;
+    margin-top: 20px;
+    margin-left: 620px;
+    padding-left: 10px;
+    padding-bottom: 20px;
+    border-radius: 5px;
+}
+.Contact-Subject {
+    display: flex;
+    justify-content: flex-start;
+    background-color: rgba(255, 255, 255, 0.2);
+    width: 380px;
+    height: 30px;
+    margin-top: 20px;
+    margin-left: 620px;
+    padding-left: 10px;
+    padding-bottom: 20px;
+    border-radius: 5px;
+}
+.Contact-Message {
+    display: flex;
+    justify-content: flex-start;
+    background-color: rgba(255, 255, 255, 0.2);
+    width: 380px;
+    height: 170px;
+    margin-top: 170px;
+    margin-left: 1030px;
+    position: absolute;
+    padding-left: 10px;
+    padding-bottom: 20px;
+    border-radius: 5px;
+}
+.Email-Send {
+    display: flex;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    width: 120px;
+    height: 20px;
     padding: 10px;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-left: 1030px;
+}
+
+
+
+/*Code responsible for the "Footer" portion of website*/
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-self: center;
+    text-align: center;
+    font-style: italic;
+}
+
+.footer h4 {
+    font-size: 40px;
+}
+
+.footer p[class="info"] {
+    position: absolute;
+    margin-top: 100px;
+    margin-left: 960px;
+    color: rgba(50, 50, 50, 0.6);
+}
+
+.footer p[class="copyright"] {
+    position: absolute;
+    margin-top: 290px;
+    margin-left: 860px;
+    color: rgba(50, 50, 50, 0.6);
+    padding-bottom: 40px;
+}
+
+hr {
+    margin-top: 50px;
+    border: 1px solid black;
+    height: 1px;
+    width: 2000px;
 }
